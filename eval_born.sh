@@ -33,7 +33,7 @@ echo ----------------------------------------------------------------------
 
 echo "6. Check that UFW is running"
 echo
-( set -x; ufw status; )
+( set -x; ufw status verbose; )
 echo ----------------------------------------------------------------------
 
 echo "7. Check hostname and that /etc/hosts is modified accoringly"
