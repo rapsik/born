@@ -111,3 +111,5 @@ echo "Both input and output logiing must be set"
 (set -x; grep "log_input" /etc/sudoers; )
 echo "14. Check that the system installed is in fact the latest stable Debian"
 (set -x; cat /etc/os-release; )
+echo "15. Check that lighttpd is running"
+(set -x; systemctl status lighttpd; )
